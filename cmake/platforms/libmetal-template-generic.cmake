@@ -4,7 +4,7 @@
 set (CMAKE_SYSTEM_PROCESSOR "arm"            CACHE STRING "")
 set (MACHINE                "template"       CACHE STRING "")
 set (CROSS_PREFIX           "arm-none-eabi-" CACHE STRING "")
-set (CMAKE_C_FLAGS          "-mcpu=cortex-m4 -std=gnu11 -g3 -DNO_ATOMIC_64_SUPPORT"               CACHE STRING "")
+set (CMAKE_C_FLAGS          "-mcpu=cortex-m4 -std=gnu11 -g3 -DNO_ATOMIC_64_SUPPORT -mfpu=fpv4-sp-d16"               CACHE STRING "")
 
 include (cross-generic-gcc)
 
